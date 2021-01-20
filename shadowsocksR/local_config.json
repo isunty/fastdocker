@@ -1,0 +1,14 @@
+{
+    "server":"192.168.66.127",
+    "server_port":96,
+    "local_address":"0.0.0.0",
+    "local_port":1080,
+    "password":"123456",
+    "timeout":120,
+    "method":"chacha20-ietf",
+    "protocol":"auth_aes128_md5",
+    "protocol_param":"",
+    "obfs":"http_simple",
+    "obfs_param":"",
+    "fast-open":true
+}

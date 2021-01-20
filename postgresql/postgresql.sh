@@ -1,6 +1,8 @@
 #!/bin/bash
 
 CONTAIN=postgresql
+PASSWORD=123456
+DBNAME=fidodb
 
 function run()
 {
@@ -14,8 +16,8 @@ function run()
         -v /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime \
         -p 5432:5432 \
         -e POSTGRES_USER=postgres \
-        -e POSTGRES_PASSWORD=bB9v7j9xv77## \
-        -e POSTGRES_DB=fidodb \
+        -e POSTGRES_PASSWORD=${PASSWORD} \
+        -e POSTGRES_DB=${DBNAME} \
         postgres:10.15-alpine
     else
         echo "容器已经存在,退出"

@@ -8,7 +8,7 @@ function run()
 
     if [[ -z ${A} ]] ; then
         echo "开始启动."
-        docker run --name mqtt -d \
+        docker run --name ${CONTAIN} -d \
         --restart always \
         -p 1883:1883 -p 9001:9001 \
         -v `pwd`/mqtt_start.sh:/mqtt_start.sh \

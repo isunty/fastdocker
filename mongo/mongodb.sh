@@ -1,8 +1,7 @@
 #!/bin/bash
 
-CONTAIN=mysql
+CONTAIN=mongodb
 PASSWORD=123456
-DBNAME=fidodb
 
 function run()
 {
@@ -10,16 +9,14 @@ function run()
 
     if [[ -z ${A} ]] ; then
         echo "开始启动."
-        docker run -dt --name mysql \
+        echo "默认加密方式是: SCRAM-SHA-256"
+        docker run -d --name ${CONTAIN} \
         --restart always \
-        --user mysql \
-        -e TZ=Asia/Shanghai \
-        -e MYSQL_ROOT_PASSWORD=${PASSWORD} \
-        -e MYSQL_USER=fido \
-        -e MYSQL_PASSWORD=${PASSWORD} \
-        -e MYSQL_DATABASE=${DBNAME} \
-        -p 3306:3306 \
-        mysql:5.7 --defaults-file=/etc/mysql/mysql.conf.d/mysqld.cnf --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+        --user mongodb \
+        -p 27017:27017 \
+        -e MONGO_INITDB_ROOT_USERNAME=root \
+        -e MONGO_INITDB_ROOT_PASSWORD=${PASSWORD} \
+        mongo:4.2.11-bionic mongod
     else
         echo "容器已经存在,退出"
     fi

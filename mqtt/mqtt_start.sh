@@ -1,5 +1,8 @@
 #!/bin/sh
 
+USER=fido
+PASSWORD=123456
+
 cat > /mosquitto/config/mosquitto.conf << EOF
 user mosquitto
 listener 1883
@@ -15,13 +18,13 @@ EOF
 echo "完成更新配置文件"
 
 cat > /mosquitto/config/acl << EOF
-user fido
+user ${USER}
 topic readwrite #
 EOF
 echo "完成更新权限"
 
 
-mosquitto_passwd -c -b /mosquitto/config/passwd fido 123456
+mosquitto_passwd -c -b /mosquitto/config/passwd ${USER} ${PASSWORD}
 echo "完成创建用户"
 
 echo "启动mqtt"
