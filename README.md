@@ -1,8 +1,11 @@
-# README
+# Fastdocker
+
+<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.1.0&color=brightgreen"/></a></p>
+
+
 
 这个项目是一个快速的docker启动项目，用于一个脚本直接启动一个快速使用的服务。
 例如，数据库，nginx等
-
 
 
 目前支持直接启动包括：
