@@ -1,9 +1,9 @@
 {
-    "server":"192.168.66.127",
+    "server":"127.0.0.1",
     "server_port":96,
     "local_address":"0.0.0.0",
     "local_port":1080,
-    "password":"123456",
+    "password":"DQHoHx67fZNvuu",
     "timeout":120,
     "method":"chacha20-ietf",
     "protocol":"auth_aes128_md5",

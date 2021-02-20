@@ -19,6 +19,7 @@ forward-socks5 / SSR_LOCAL:${SSR_PORT} .
 EOF
 
         docker run -d --name ${CONTAIN} \
+        --restart=always \
         -p ${PORT}:${PORT} \
         -v `pwd`/config:/etc/privoxy/config \
         --link ${SSR_CONTAIN} \

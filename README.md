@@ -1,6 +1,6 @@
 # Fastdocker
 
-<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.2.0&color=brightgreen"/></a></p>
+<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.2.1&color=brightgreen"/></a></p>
 
 
 
@@ -33,3 +33,6 @@ stop   # 停止容器
 ps     # 查询容器
 ```
 
+## update
+
+2021/2/20 添加了privoxy的restart参数;
