@@ -1,6 +1,6 @@
 # Fastdocker
 
-<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.1.0&color=brightgreen"/></a></p>
+<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.2.0&color=brightgreen"/></a></p>
 
 
 
@@ -19,6 +19,7 @@
 7. pyiserver - python仓库
 8. registry - docker仓库
 9. shadowsocksR - SSR代理
+10. privoxy - http转sock5代理
 
 
 
