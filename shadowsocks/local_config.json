@@ -1,0 +1,11 @@
+{
+    "mode": "tcp_and_udp",
+    "server":"127.0.0.1",
+    "server_port":26,
+    "local_address": "0.0.0.0",
+    "local_port":1080,
+    "password":"Ro7J9C6QT7RUXHCqI5Hf6E4Et",
+    "timeout":15,
+    "method":"aes-256-gcm",
+    "fast-open":true
+}

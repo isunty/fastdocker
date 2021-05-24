@@ -1,6 +1,6 @@
 # Fastdocker
 
-<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.2.1&color=brightgreen"/></a></p>
+<p align="left"><a href="#"></a><img src="https://img.shields.io/static/v1?label=fastdocker&message=1.3.1&color=brightgreen"/></a></p>
 
 
 
@@ -20,6 +20,7 @@
 8. registry - docker仓库
 9. shadowsocksR - SSR代理
 10. privoxy - http转sock5代理
+11. shadowsocks - SS代理
 
 
 
@@ -34,5 +35,7 @@ ps     # 查询容器
 ```
 
 ## update
+
+2021/5/24 添加了shadowsocks-libev代理;
 
 2021/2/20 添加了privoxy的restart参数;
