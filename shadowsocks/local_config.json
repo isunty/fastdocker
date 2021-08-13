@@ -1,6 +1,6 @@
 {
     "mode": "tcp_and_udp",
-    "server":"127.0.0.1",
+    "server":"141.164.62.30",
     "server_port":26,
     "local_address": "0.0.0.0",
     "local_port":1080,
